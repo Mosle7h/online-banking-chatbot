@@ -1,0 +1,52 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good afternoon"],
+      "responses": ["Hello! How can I assist you today?", "Hi there! How can I help you?", "Hey! How may I assist you?"],
+      "context_set": ""
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later", "Take care"],
+      "responses": ["Goodbye! Have a great day!", "See you later! Take care.", "Bye! Have a good one!"],
+      "context_set": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thank you", "Thanks", "Appreciate it"],
+      "responses": ["You're welcome!", "Glad I could help!", "Anytime!"],
+      "context_set": ""
+    },
+    {
+      "tag": "options",
+      "patterns": ["What can you do?", "What services do you offer?", "How can you assist me?"],
+      "responses": ["I can help you with balance inquiries, fund transfers, bill payments, and more. Just let me know what you need assistance with!"],
+      "context_set": ""
+    },
+    {
+      "tag": "balance_inquiry",
+      "patterns": ["Check balance", "What's my balance?", "Balance inquiry"],
+      "responses": ["Sure, could you please provide your account number?"],
+      "context_set": "balance_inquiry"
+    },
+    {
+      "tag": "fund_transfer",
+      "patterns": ["Transfer funds", "Send money", "Make a transfer"],
+      "responses": ["To initiate a fund transfer, please provide the recipient's account details and the amount you'd like to transfer."],
+      "context_set": "fund_transfer"
+    },
+    {
+      "tag": "bill_payment",
+      "patterns": ["Pay bills", "Make a payment", "Settle bills"],
+      "responses": ["To pay bills, please provide the bill details and the amount you'd like to pay."],
+      "context_set": "bill_payment"
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["I'm sorry, I didn't understand that. Could you please rephrase or provide more information?"],
+      "context_set": ""
+    }
+  ]
+}
